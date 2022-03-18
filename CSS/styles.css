@@ -101,7 +101,7 @@
     color: rgb(255, 0, 0);
     
 }
-#types{
+#types, #types2{
     position: relative;
 
 }
@@ -110,16 +110,35 @@
     object-fit: cover;
     border-radius: 8px;
     height: 80%;
-
-
+}
+#types2 img{
+    width: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 70%;
 }
 #choose{
     font-size: 3vh;
     font-weight: bold;
     line-height: 1.8;
 }
-#types .col-md-3 .h5{
+#types .col-md-3 .h5,
+#types2 .col-md-3 .h5{
     text-align: center;
     font-size: 3.0vh;
     font-weight: bold;
+    font-style: italic;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+}
+#footer h2 {
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+}
+#footer h2 em{
+    color: #EF4430;
 }
