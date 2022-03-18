@@ -155,19 +155,35 @@ footer .icons{
 }
 form{
     color: black;
-    background-image: url('../IMAGES/pizz4.jpg');
+    background-image: url('../IMAGES/pizza-bg.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    text-align: center;
 }
 form h2{
     color: #EF4430;
     font-weight: bold;
     font-size: 3vh;
 }
-form input, select{
-    border-radius: 20px;
-    outline: black;
+form input, select {
+    border-radius: 5px;
+    border: 1px solid white;
     background: transparent;
     color: #fff;
     width: 50%;
+}
+::placeholder{
+    color: white;
+}
+form input[text]{
+    color: #fff;
+}
+form label{
+    color: #EF4430;
+}
+form input, select option{
+    color: #000;
 }
 #submit, 
 #close{
@@ -178,5 +194,7 @@ form input, select{
     width: 20%;
     text-align: center;
     margin-left: 2%;
+    outline: none;
+    border: none;
 
 }
