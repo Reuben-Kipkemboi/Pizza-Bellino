@@ -15,7 +15,7 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 .h1 .bellino{
     color: black;
@@ -33,19 +33,42 @@
 .nav .nav-item .link:hover{
     color:#EF4430;
 }
+.logo-over{
+    height: 15vh;
+}
 
 /* Main-content  */
+#main-content{
+    margin-top: 3%;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+    background-size: cover;   
+}
+#main-content .background{
+    position: absolute;
+    opacity: 0.4;
+    width: 100%;
+}
+
 .slogan{
     display: flex;
     justify-content: space-around;
+    position: relative;
+    
 }
 .slogan img{
     height: 80vh;
     width: 50%;
     object-fit: cover;
     outline: none;
-    /* border-radius: 50%; */
-    box-shadow: 2 5.8px 5px 2px rgba(0, 0, 0, 0.05);
+}
+.slogan .more h2{
+    padding: 50px;
+    font-size: 15vh;
 }
 .slogan .welcome-message{
     font-size: 8vh;
@@ -54,5 +77,31 @@
 .slogan .welcome-message strong{
     color: #EF4430;
     
+
+}
+.buttons{
+    
+}
+.btn{
+    background-color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 35%;
+    text-align: center;
+    margin-left: 2%;
+    
+    
+}
+.btn:hover{
+    /* color: #fff; */
+    /* background: linear-gradient(45deg, red, black); */
+    background-color: black;
+    color: #EF4430;
+
+}
+#types img{
+    width: 90%;
+    object-fit: cover;
 
 }
