@@ -79,9 +79,6 @@
     
 
 }
-.buttons{
-    
-}
 .btn{
     background-color: #fff;
     padding: 10px;
@@ -100,8 +97,29 @@
     color: #EF4430;
 
 }
+.enjoy{
+    color: rgb(255, 0, 0);
+    
+}
+#types{
+    position: relative;
+
+}
 #types img{
     width: 90%;
     object-fit: cover;
+    border-radius: 8px;
+    height: 80%;
 
+
+}
+#choose{
+    font-size: 3vh;
+    font-weight: bold;
+    line-height: 1.8;
+}
+#types .col-md-3 .h5{
+    text-align: center;
+    font-size: 3.0vh;
+    font-weight: bold;
 }
