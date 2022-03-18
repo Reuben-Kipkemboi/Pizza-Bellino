@@ -153,3 +153,19 @@ footer .icons{
     padding: 20px;
     font-size: 3.5vh;
 }
+form{
+    color: black;
+    background-image: url('../IMAGES/pizz4.jpg');
+}
+form h2{
+    color: #EF4430;
+    font-weight: bold;
+    font-size: 3vh;
+}
+form input, select{
+    border-radius: 20px;
+    outline: black;
+    background: transparent;
+    color: #fff;
+    width: 50%;
+}

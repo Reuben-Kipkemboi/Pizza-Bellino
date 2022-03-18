@@ -144,6 +144,59 @@
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3988.815461705678!2d36.822758414315736!3d-1.2846653990629948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1647629632589!5m2!1sen!2ske"
                 width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </footer>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form action="#" name="order-form">
+                    <h2 class="text-center">Make an order</h2>
+                    <label for="Name">Full Name</label>
+                    <br>
+                    <input type="text" placeholder="Your Name">
+                    <br>
+                    <label for="Phone Number">Telephone number</label>
+                    <br>
+                    <input type="tel" placeholder="+254720-000-000">
+                    <br>
+                    <label for="size">Pizza Size</label>
+                    <br>
+                    <select name="size" id="pizza-size">
+                        <br>
+                        <option value="1">Whats your favourite size</option>
+                        <option value="2">Small</option>
+                        <option value="3">Medium</option>
+                        <option value="4">Large</option>
+                    </select>
+                    <br>
+                    <label for="Crust-type">Crust Type</label>
+                    <br>
+                    <select name="crust-type" id="crust">
+                        <option value="1">Whats your crust type</option>
+                        <option value="2">Cripsy</option>
+                        <option value="3">Stuffed</option>
+                        <option value="4">Gluten Free</option>
+                    </select>
+                    <br>
+                    <label for="toppings">Toppings</label>
+                    <br>
+                    <select name="toppings" id="toppings">
+                        <option value="1">Choose toppings</option>
+                        <option value="2">Roasted Tomatoes</option>
+                        <option value="3">Roasted Broccoli</option>
+                        <option value="4">Salad</option>
+                    </select>
+                    <br>
+
+                    <Label for="Destination">Delivery Destination</Label>
+                    <br>
+                    <input type="text" name="destination" id="destination" placeholder="Nairobi">
+                    <br>
+                    <button id="submit">Make Order</button>
+                    <button id="close">close</button>
+
+                </form>
+
+            </div>
+        </div>
     </div>
     <!-- J Query -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
