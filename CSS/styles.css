@@ -1,9 +1,11 @@
+/*Css Reset */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* Header */
 .h1{
     color: red;
     font-weight: bold;
@@ -29,5 +31,28 @@
     color: black;
 }
 .nav .nav-item .link:hover{
-    color: red;
+    color:#EF4430;
+}
+
+/* Main-content  */
+.slogan{
+    display: flex;
+    justify-content: space-around;
+}
+.slogan img{
+    height: 80vh;
+    width: 50%;
+    object-fit: cover;
+    outline: none;
+    /* border-radius: 50%; */
+    box-shadow: 2 5.8px 5px 2px rgba(0, 0, 0, 0.05);
+}
+.slogan .welcome-message{
+    font-size: 8vh;
+    font-family: 'Inspiration', cursive;
+}
+.slogan .welcome-message strong{
+    color: #EF4430;
+    
+
 }
