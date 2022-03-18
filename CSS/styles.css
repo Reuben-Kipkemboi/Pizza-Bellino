@@ -142,3 +142,14 @@ footer{
 #footer h2 em{
     color: #EF4430;
 }
+footer .icons{
+    color: #EF4430;
+    text-align: center;
+    padding: 20px;
+    
+
+}
+.icons .icon{
+    padding: 20px;
+    font-size: 3.5vh;
+}
