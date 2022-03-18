@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.h1{
+    color: red;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: 'Inspiration', cursive;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+.h1 .bellino{
+    color: black;
+    font-family: 'Inspiration', cursive;
+}
+.nav .nav-item{
+    padding: 20px;
+}
+.nav .nav-item .link{
+    font-size: 3.5vh;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.nav .nav-item .link:hover{
+    color: red;
+}
