@@ -1,36 +1,42 @@
 // Showing and hiding form on click of the order link
-
-// let order = document.getElementById('order-now');
-
-// order.addEventListener('click', ()=>{
-
-//     let form = document.getElementById('order-form')
-//     if(form.style.display === 'none'){
-//         form.style.display = 'block';
-//     }else{
-
-//      form.style.display = 'none';
-//     }
-
-// });
-
 $(document).ready(function () {
+
+
     $('#orderNow').click(function () {
         $('form#orderForm').toggle();
+        $('form#orderForm').css("width","50%");
 
 
     })
     $('#orderNow').click(function () {
         $('#description').toggle();
+        $('#pizza-types').toggle();
+        $('#pizza-types2').toggle();
+
 
     });
+    // $('#orderNow').click(function () {
+    //     $('#pizza-types').toggle();
+
+    // });
 
     $('#close').click(function () {
         $('form#orderForm').hide();
         $('#description').show();
+        $('#pizza-types').show();
+        $('#pizza-types2').show();
+
 
 
     })
+
+
+    // submitting and querying user data
+    $('#submit').submit(function(event){
+       event.preventDefault();
+
+    })
+
 
 
 
