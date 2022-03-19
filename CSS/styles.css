@@ -154,7 +154,6 @@ footer .icons{
     font-size: 3.5vh;
 }
 form{
-    color: black;
     background-image: url('../IMAGES/pizza-bg.jpg');
     background-size: cover;
     object-fit: cover;
@@ -181,10 +180,13 @@ form input[text]{
     color: #fff;
 }
 form label{
-    color: #000;
+    color: rgb(240, 80, 48);
     font-weight: bold;
 }
-form input, select option{
+form label:hover{
+    color: #fff;
+}
+form  select option{
     color: #000;
 }
 #submit, 
