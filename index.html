@@ -74,15 +74,15 @@
                         <h2 class="text-center">Make an order</h2>
                         <label for="Name">Full Name</label>
                         <br>
-                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Your Name" required>
                         <br>
                         <label for="Phone Number">Telephone number</label>
                         <br>
-                        <input type="tel" placeholder="+254720-000-000">
+                        <input type="tel" placeholder="+254720-000-000" required>
                         <br>
                         <label for="size">Pizza Size</label>
                         <br>
-                        <select name="size" id="pizza-size">
+                        <select name="size" id="pizza-size" required>
                             <br>
                             <option value="1">Whats your favourite size</option>
                             <option value="2">Small</option>
@@ -92,7 +92,7 @@
                         <br>
                         <label for="Crust-type">Crust Type</label>
                         <br>
-                        <select name="crust-type" id="crust">
+                        <select name="crust-type" id="crust" required>
                             <option value="1">Whats your crust type</option>
                             <option value="2">Cripsy</option>
                             <option value="3">Stuffed</option>
@@ -101,12 +101,16 @@
                         <br>
                         <label for="toppings">Toppings</label>
                         <br>
-                        <select name="toppings" id="toppings">
+                        <select name="toppings" id="toppings" required>
                             <option value="1">Choose toppings</option>
                             <option value="2">Roasted Tomatoes</option>
                             <option value="3">Roasted Broccoli</option>
                             <option value="4">Salad</option>
                         </select>
+                        <br>
+                        <Label for="items">Number of Pizzas</Label>
+                        <br>
+                        <input type="number" name="number" id="pizzaNumber" placeholder="1" required>
                         <br>
     
                         <Label for="Destination">Delivery Destination</Label>
