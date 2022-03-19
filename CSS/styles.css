@@ -153,6 +153,8 @@ footer .icons{
     padding: 20px;
     font-size: 3.5vh;
 }
+
+/* user form */
 #form-data{
     justify-content: center;
 }
@@ -164,11 +166,12 @@ form{
     text-align: center;
     display: none;
     position: absolute;
+    border-radius: 10px;
 }
 form h2{
     color: #fff;
     font-weight: bold;
-    font-size: 4vh;
+    font-size: 5vh;
 }
 form input, select {
     border-radius: 5px;

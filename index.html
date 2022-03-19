@@ -74,35 +74,32 @@
                         <h2 class="text-center">Make an order</h2>
                         <label for="Name">Full Name</label>
                         <br>
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id= "name"placeholder="Your Name" required>
                         <br>
                         <label for="Phone Number">Telephone number</label>
                         <br>
-                        <input type="tel" placeholder="+254720-000-000" required>
+                        <input type="tel"  id= "tel"placeholder="+254720-000-000" required min="10">
                         <br>
                         <label for="size">Pizza Size</label>
                         <br>
                         <select name="size" id="pizza-size" required>
                             <br>
-                            <option value="1">Whats your favourite size</option>
-                            <option value="2">Small</option>
-                            <option value="3">Medium</option>
-                            <option value="4">Large</option>
+                            <option value="2" id="small">Small</option>
+                            <option value="3" id="medium">Medium</option>
+                            <option value="4" id="large">Large</option>
                         </select>
                         <br>
                         <label for="Crust-type">Crust Type</label>
                         <br>
                         <select name="crust-type" id="crust" required>
-                            <option value="1">Whats your crust type</option>
-                            <option value="2">Cripsy</option>
-                            <option value="3">Stuffed</option>
-                            <option value="4">Gluten Free</option>
+                            <option value="2" id="2">Cripsy</option>
+                            <option value="3" id="3">Stuffed</option>
+                            <option value="4" id="4">Gluten Free</option>
                         </select>
                         <br>
                         <label for="toppings">Toppings</label>
                         <br>
                         <select name="toppings" id="toppings" required>
-                            <option value="1">Choose toppings</option>
                             <option value="2">Roasted Tomatoes</option>
                             <option value="3">Roasted Broccoli</option>
                             <option value="4">Salad</option>
