@@ -40,7 +40,7 @@
                             <a href="#types" class="link">Pizzas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="link">Order</a>
+                            <a href="#order-form" class="link" id="make-order">Order</a>
                         </li>
                         <li class="nav-item">
                             <a href="#footer" class="link">Contact-Bellino</a>
@@ -60,7 +60,7 @@
                         <p class="us text-center fw-bold"> Life is too short, order and Enjoy some pizza
                         </p>
                         <span class="buttons">
-                            <button class="btn">Order Now</button>
+                            <button class="btn" id="orderNow">Order Now</button>
                             <button class="btn">Delivery Services</button>
                         </span>
                     </div>
@@ -68,9 +68,62 @@
 
 
             </div>
+            <div class="row" id="form-data">
+                <div class="col-md-6">
+                    <form name="order-form" id="orderForm">
+                        <h2 class="text-center">Make an order</h2>
+                        <label for="Name">Full Name</label>
+                        <br>
+                        <input type="text" placeholder="Your Name">
+                        <br>
+                        <label for="Phone Number">Telephone number</label>
+                        <br>
+                        <input type="tel" placeholder="+254720-000-000">
+                        <br>
+                        <label for="size">Pizza Size</label>
+                        <br>
+                        <select name="size" id="pizza-size">
+                            <br>
+                            <option value="1">Whats your favourite size</option>
+                            <option value="2">Small</option>
+                            <option value="3">Medium</option>
+                            <option value="4">Large</option>
+                        </select>
+                        <br>
+                        <label for="Crust-type">Crust Type</label>
+                        <br>
+                        <select name="crust-type" id="crust">
+                            <option value="1">Whats your crust type</option>
+                            <option value="2">Cripsy</option>
+                            <option value="3">Stuffed</option>
+                            <option value="4">Gluten Free</option>
+                        </select>
+                        <br>
+                        <label for="toppings">Toppings</label>
+                        <br>
+                        <select name="toppings" id="toppings">
+                            <option value="1">Choose toppings</option>
+                            <option value="2">Roasted Tomatoes</option>
+                            <option value="3">Roasted Broccoli</option>
+                            <option value="4">Salad</option>
+                        </select>
+                        <br>
+    
+                        <Label for="Destination">Delivery Destination</Label>
+                        <br>
+                        <input type="text" name="destination" id="destination" placeholder="Nairobi">
+                        <br>
+                        <br>
+                        <button id="submit">Make Order</button>
+                        <button id="close">close</button>
+    
+                    </form>
+    
+                </div>
+            </div>
 
         </div>
-        <div class="decription position-relative">
+        <div class="decription position-relative" id="description">
             <h2 class="text-center fw-bold">At A Glance checkout our various available <br> <span class="enjoy"> Ready &
                     Delicious Pizza</span></h2>
 
@@ -145,59 +198,7 @@
                 width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </footer>
 
-        <div class="row">
-            <div class="col-md-4">
-                <form action="#" name="order-form">
-                    <h2 class="text-center">Make an order</h2>
-                    <label for="Name">Full Name</label>
-                    <br>
-                    <input type="text" placeholder="Your Name">
-                    <br>
-                    <label for="Phone Number">Telephone number</label>
-                    <br>
-                    <input type="tel" placeholder="+254720-000-000">
-                    <br>
-                    <label for="size">Pizza Size</label>
-                    <br>
-                    <select name="size" id="pizza-size">
-                        <br>
-                        <option value="1">Whats your favourite size</option>
-                        <option value="2">Small</option>
-                        <option value="3">Medium</option>
-                        <option value="4">Large</option>
-                    </select>
-                    <br>
-                    <label for="Crust-type">Crust Type</label>
-                    <br>
-                    <select name="crust-type" id="crust">
-                        <option value="1">Whats your crust type</option>
-                        <option value="2">Cripsy</option>
-                        <option value="3">Stuffed</option>
-                        <option value="4">Gluten Free</option>
-                    </select>
-                    <br>
-                    <label for="toppings">Toppings</label>
-                    <br>
-                    <select name="toppings" id="toppings">
-                        <option value="1">Choose toppings</option>
-                        <option value="2">Roasted Tomatoes</option>
-                        <option value="3">Roasted Broccoli</option>
-                        <option value="4">Salad</option>
-                    </select>
-                    <br>
-
-                    <Label for="Destination">Delivery Destination</Label>
-                    <br>
-                    <input type="text" name="destination" id="destination" placeholder="Nairobi">
-                    <br>
-                    <br>
-                    <button id="submit">Make Order</button>
-                    <button id="close">close</button>
-
-                </form>
-
-            </div>
-        </div>
+        
     </div>
     <!-- J Query -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"

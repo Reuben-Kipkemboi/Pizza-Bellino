@@ -153,12 +153,17 @@ footer .icons{
     padding: 20px;
     font-size: 3.5vh;
 }
+#form-data{
+    justify-content: center;
+}
 form{
     background-image: url('../IMAGES/pizza-bg.jpg');
     background-size: cover;
     object-fit: cover;
     background-position: center;
     text-align: center;
+    display: none;
+    position: absolute;
 }
 form h2{
     color: #fff;
