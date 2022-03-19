@@ -213,3 +213,22 @@ form  select option{
     background-color: rgb(232, 152, 44);
     color: #fff;
 }
+
+/* hover effect to show price */
+#hover1 #price1
+/*#hover2 #price2
+#hover3 #price3
+#hover4 #price4
+#hover5 #price5
+#hover6 #price6
+#hover7 #price7
+#hover8 #price8*/{ 
+    border: 7px solid #fff;
+    color: #fff;
+    font-weight: 900;
+    width: 70%;
+    height: 70%;
+    margin: -90% 0 0 10%;
+    display: none;
+    
+}

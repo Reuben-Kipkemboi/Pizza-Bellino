@@ -15,10 +15,6 @@ $(document).ready(function () {
 
 
     });
-    // $('#orderNow').click(function () {
-    //     $('#pizza-types').toggle();
-
-    // });
 
     $('#close').click(function () {
         $('form#orderForm').hide();
@@ -35,6 +31,14 @@ $(document).ready(function () {
     $('#submit').submit(function(event){
        event.preventDefault();
 
+    })
+
+
+    $('#hover1').mouseover(function () {
+        $('#price1').show()
+    })
+    $('#hover1').mouseout(function () {
+        $('#price1').hide()
     })
 
 
