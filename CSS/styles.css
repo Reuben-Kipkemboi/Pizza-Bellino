@@ -194,6 +194,7 @@ form input[text]{
 form label{
     color: rgb(240, 80, 48);
     font-weight: bold;
+    font-size: 3.5vh;
 }
 form label:hover{
     color: #fff;
@@ -266,6 +267,12 @@ form  select option{
     border-radius: 10px;
     font-weight: bold;
 
+}
+.table{
+    color: #fff;
+}
+.summary{
+    display: none;
 }
 
 

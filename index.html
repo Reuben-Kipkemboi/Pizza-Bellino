@@ -144,9 +144,43 @@
 
                         <Label for="Destination">Delivery Destination</Label>
                         <br>
-                        <input type="text" name="destination" id="destination" placeholder="Nairobi">
+                        <input type="text" name="destination" id="destination" placeholder="Nairobi, Ngong Lane Plaza">
                         <br>
                         <br>
+                        <div class="summary position-relative" id="summary">
+                            <p class="text-center text-white">Order Summary</p>
+
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No.of Pizza</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Phone</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Crust-type</th>
+                                        <th scope="col">Toppings</th>
+                                        <th scope="col">Delivery</th>
+                                        <th scope="col">Destination</th>
+                                      </tr>
+                                </thead>
+                                <tbody id="summary">
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td id="number"></td> 
+                                        <td id="name"></td>
+                                        <td id="phone"></td>
+                                        <td id="type"></td>
+                                        <td id="crustType"></td>
+                                        <td id="toppings"></td>
+                                        <td id="delivery"></td>
+                                        <td id="destination"></td>  
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                
+                
+                        </div>
                         <button id="checkout">Checkout</button>
                         <button id="submit">Make Order</button>
                         <button id="close">close</button>
@@ -155,7 +189,10 @@
                 </div>
             </div>
 
+
+
         </div>
+        
         <div class="decription position-relative" id="description">
             <h2 class="text-center fw-bold">At A Glance checkout our various available <br> <span class="enjoy"> Ready &
                     Delicious Pizza</span></h2>

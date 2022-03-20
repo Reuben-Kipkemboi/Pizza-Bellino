@@ -1,5 +1,6 @@
-
 function validate() {
+    let fullName = $('#name').val();
+    let telephoneNumber = $('#tel').val();
     if (fullName.value == "" || fullName.value.length == 0) {
         alert("Dear Customer Enter A valid Name")
         return false
@@ -9,11 +10,11 @@ function validate() {
     } else {
         alert(fullName.value + " " + "We have received your Pizza order.We are Preparing.Thank You")
     }
-
 }
 // Showing and hiding form on click of the order link
 $(document).ready(function () {
 
+    // closing and making orders
     $('#orderNow').click(function () {
         $('form#orderForm').toggle();
         $('form#orderForm').css("width", "50%");
@@ -34,12 +35,18 @@ $(document).ready(function () {
     $('#deliveryOverview').click(function () {
         $('#delivery-paragraph').toggle();
         $('#delivery-paragraph').css("width", "70%");
-        
+
     })
 
     $('.button').click(function () {
         $('#delivery-paragraph').hide();
     })
+
+    // Checking out and confirming the prices
+    $('#checkout').click(function () {
+        $('#summary').toggle();
+    })
+    
 
 
 
@@ -56,6 +63,7 @@ $(document).ready(function () {
 
     //Backend logic
 
+
     $('#submit').click(function (event) {
         event.preventDefault()
         let fullName = $('#name').val();
@@ -69,8 +77,9 @@ $(document).ready(function () {
         let costOfDelivery = $('#delivery option:selected').val();
         let destination = $('#destination').val();
 
-        let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings)
-        + parseInt(additionalToppings)+ parseInt(crustType) + parseInt(costOfDelivery));
-        alert("Dear " + fullName +"Your" +pizzaType + telephoneNumber + totalsOfPizza);
+        let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
+            parseInt(additionalToppings) + parseInt(crustType) + parseInt(costOfDelivery));
+        alert("Dear " + fullName + "Your" + pizzaType + telephoneNumber + totalsOfPizza);
     });
+
 })
