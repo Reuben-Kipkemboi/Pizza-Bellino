@@ -202,7 +202,8 @@ form  select option{
     color: #000;
 }
 #submit, 
-#close{
+#close,
+#checkout{
     background-color: #fff;
     padding: 5px;
     font-weight: bold;
@@ -216,7 +217,8 @@ form  select option{
 
 }
 #submit:hover, 
-#close:hover{
+#close:hover,
+#checkout:hover{
     background-color: rgb(232, 152, 44);
     color: #fff;
 }
@@ -240,7 +242,7 @@ form  select option{
     
 }
 #delivery-paragraph{
-    background-color: #000;
+    background-color: #000; 
     color: #fff;
     text-align: center; 
     position: relative; 
