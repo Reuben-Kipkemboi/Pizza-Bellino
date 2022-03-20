@@ -243,7 +243,8 @@ form  select option{
     background-color: #000;
     color: #fff;
     text-align: center; 
-    position: relative;   
+    position: relative; 
+    display: none;  
 }
 #delivery-paragraph .delivery-paragraph{
     font-size: 3vh;

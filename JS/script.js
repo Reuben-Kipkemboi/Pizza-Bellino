@@ -31,6 +31,18 @@ $(document).ready(function () {
         $('#pizza-types2').show();
     })
 
+    $('#deliveryOverview').click(function () {
+        $('#delivery-paragraph').toggle();
+        $('#delivery-paragraph').css("width", "70%");
+        
+    })
+
+    $('.button').click(function () {
+        $('#delivery-paragraph').hide();
+    })
+
+
+
 
     //  price on move of the mouse
 
