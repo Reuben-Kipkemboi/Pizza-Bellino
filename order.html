@@ -1,0 +1,35 @@
+//prices with delivery
+let smallWithDelivery = parseInt(totalNumberOfPizza ) * priceOfSmallWithDelivery;
+console.log(smallWithDelivery);
+let mediumWithDelivery = parseInt(totalNumberOfPizza.value) * priceOfMediumWithDelivery;
+let largeWithDelivery = parseInt(totalNumberOfPizza.value) * priceOfLargeWithDelivery;
+// prices without delivery
+let smallWithoutDelivery = parseInt(totalNumberOfPizza.value)*(priceOfSmall + crustPrice + toppingsPrice);
+let mediumWithoutDelivery = parseInt(totalNumberOfPizza.value)*(priceOfMedium + crustPrice + toppingsPrice);
+let largeWithoutDelivery = parseInt(totalNumberOfPizza.value)*(priceOfLarge + crustPrice + toppingsPrice);
+
+btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    // validate();
+    if (withDelivery.value == no && pizzaSize.value == small) {
+        alert(withDelivery.value)
+        alert("Hello, Your Total charge for this commodity is:" + smallWithoutDelivery);
+        return smallWithoutDelivery
+    } else if (withDelivery.value == no && pizzaSize.value == medium) {
+        alert("Hello, Your Total charge for this commodity is:" + mediumWithoutDelivery);
+        return mediumWithoutDelivery
+    } else if (withDelivery.value == no && pizzaSize.value == large) {
+        alert("Hello, Your Total charge for this commodity is:" + largeWithoutDelivery);
+        return largeWithoutDelivery
+    } else if (withDelivery.value == yes && pizzaSize.value == small) {
+        alert("Hello, Your Total charge for this commodity is:" + smallWithDelivery);
+        return smallWithDelivery
+    } else if (withDelivery.value == yes && pizzaSize.value == medium) {
+        alert("Hello, Your Total charge for this commodity is:" + mediumWithDelivery);
+        return mediumWithDelivery
+    } else if (withDelivery.value == yes && pizzaSize.value == large) {
+        alert("Hello, Your Total charge for this commodity is:" + largeWithDelivery);
+        return largeWithDelivery
+    } else {
+        // alert("Kindly check your order details and make an order")
+    }

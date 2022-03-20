@@ -74,42 +74,49 @@
                         <h2 class="text-center">Make an order</h2>
                         <label for="Name">Full Name</label>
                         <br>
-                        <input type="text" id= "name"placeholder="Your Name" required>
+                        <input type="text" id="name" placeholder="Your Name" required>
                         <br>
                         <label for="Phone Number">Telephone number</label>
                         <br>
-                        <input type="tel"  id= "tel"placeholder="+254720-000-000" required min="10">
+                        <input type="tel" id="tel" placeholder="+254720-000-000" required min="10">
                         <br>
                         <label for="size">Pizza Size</label>
                         <br>
                         <select name="size" id="pizza-size" required>
                             <br>
-                            <option value="2" id="small">Small</option>
-                            <option value="3" id="medium">Medium</option>
-                            <option value="4" id="large">Large</option>
+                            <option value="600" id="small">Small</option>
+                            <option value="800" id="medium">Medium</option>
+                            <option value="1200" id="large">Large</option>
                         </select>
                         <br>
                         <label for="Crust-type">Crust Type</label>
                         <br>
                         <select name="crust-type" id="crust" required>
-                            <option value="2" id="2">Cripsy</option>
-                            <option value="3" id="3">Stuffed</option>
-                            <option value="4" id="4">Gluten Free</option>
+                            <option value="200" id="2">Cripsy</option>
+                            <option value="300" id="3">Stuffed</option>
+                            <option value="150" id="4">Gluten Free</option>
                         </select>
                         <br>
                         <label for="toppings">Toppings</label>
                         <br>
                         <select name="toppings" id="toppings" required>
-                            <option value="2">Roasted Tomatoes</option>
-                            <option value="3">Roasted Broccoli</option>
-                            <option value="4">Salad</option>
+                            <option value="100">Roasted Tomatoes</option>
+                            <option value="160">Roasted Broccoli</option>
+                            <option value="150">Salad</option>
                         </select>
                         <br>
                         <Label for="items">Number of Pizzas</Label>
                         <br>
                         <input type="number" name="number" id="pizzaNumber" placeholder="1" required>
                         <br>
-    
+                        <label for="delivery">With Delivery?</label>
+                        <br>
+                        <select name="delivery" id="delivery" required>
+                            <option value="0" id="no">NO</option>
+                            <option value="300" id="yes">YES</option>
+                        </select>
+                        <br>
+                        
                         <Label for="Destination">Delivery Destination</Label>
                         <br>
                         <input type="text" name="destination" id="destination" placeholder="Nairobi">
@@ -117,9 +124,9 @@
                         <br>
                         <button id="submit">Make Order</button>
                         <button id="close">close</button>
-    
+
                     </form>
-    
+
                 </div>
             </div>
 
@@ -199,7 +206,7 @@
                 width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </footer>
 
-        
+
     </div>
     <!-- J Query -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
