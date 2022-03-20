@@ -51,12 +51,13 @@ $(document).ready(function () {
         let pizzaSize = $('#pizza-size option:selected').val();
         let crustType = $('#crust option:selected').val();
         let toppings = $('#toppings option:selected').val();
+        let additionalToppings = $('#toppings2 option:selected').val();
         let totalNumberOfPizza = $('#pizzaNumber').val();
-        let costOfDelivery = $('#delivery option:selected').val()
+        let costOfDelivery = $('#delivery option:selected').val();
         let destination = $('#destination').val();
 
         let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings)
-         + parseInt(crustType) + parseInt(costOfDelivery));
-        alert("Heyyy" + fullName + telephoneNumber + totalsOfPizza)
+        + parseInt(additionalToppings)+ parseInt(crustType) + parseInt(costOfDelivery));
+        alert("Dear " + fullName + telephoneNumber + totalsOfPizza);
     });
 })
