@@ -106,9 +106,16 @@ function validate() {
         let destination = $('#destination').val();
         let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
             parseInt(additionalToppings) + parseInt(crustType) + parseInt(costOfDelivery));
-        alert("Hey" + " " + fullName + " " + "of telephone " + telephoneNumber + " " + "and your " + pizzaType + " " + crustType + " " +
-            toppings + " " + additionalToppings + " " + totalNumberOfPizza + costOfDelivery + " " +
-            destination + " " + "And of your Totals is :" + totalsOfPizza)
+
+        if(costOfDelivery == 0){
+            alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ",thank you for ordering, We have received Your Order of and your "
+        + totalNumberOfPizza+ " " + pizzaType + " " + "Is being prepared. Kindly pick it up at our new outlet." +" " + "Your Total Amount to be paid is :" + totalsOfPizza)
+        }else{
+            alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ".We have received Your Order of "
+        + totalNumberOfPizza+ " " + pizzaType + " " + "It is being prepared and our messenger will deliver to " +
+            destination + " " + "Be on the watch for a call." + "Your Total Amount  to be paid is :" + totalsOfPizza  + ".Pay on delivery" )
+        }
+        
     });
 
 });
