@@ -1,44 +1,58 @@
 /*Css Reset */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Header */
-.h1{
+.h1 {
     color: red;
     font-weight: bold;
     line-height: 1.5;
     font-family: 'Inspiration', cursive;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     margin-top: 2%;
 }
-.h1 .bellino{
+
+.h1 .bellino {
     color: black;
     font-family: 'Inspiration', cursive;
 }
-.nav .nav-item{
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .h1 .bellino {
+        font-size: 5vh;
+
+    }
+}
+
+.nav .nav-item {
     padding: 20px;
 }
-.nav .nav-item .link{
+
+.nav .nav-item .link {
     font-size: 3.5vh;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
-.nav .nav-item .link:hover{
-    color:#EF4430;
+
+.nav .nav-item .link:hover {
+    color: #EF4430;
 }
-.logo-over{
+
+.logo-over {
     height: 15vh;
 }
 
 /* Main-content  */
-#main-content{
+#main-content {
     margin-top: 3%;
     height: 100vh;
     width: 100%;
@@ -46,40 +60,65 @@
     background-position: center;
     object-fit: cover;
     position: relative;
-    background-size: cover;   
+    background-size: cover;
 }
-#main-content .background{
+
+#main-content .background {
     position: absolute;
     opacity: 0.4;
     width: 100%;
 }
 
-.slogan{
+@media (min-width: 320px) and (max-width: 480px) {
+    #main-content .background {
+        height: 100vh;
+        background-size: cover;
+        object-fit: cover;
+    }
+}
+
+.slogan {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     position: relative;
-    
+
 }
-.slogan img{
-    height: 80vh;
-    width: 50%;
-    object-fit: cover;
-    outline: none;
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .slogan {
+        justify-content: center;
+    }
 }
-.slogan .more h2{
+
+.slogan .more h2 {
     padding: 50px;
     font-size: 15vh;
 }
-.slogan .welcome-message{
+@media (min-width: 320px) and (max-width: 480px) {
+    .slogan.more h2{
+        justify-content: center;
+        font-size: 6vh;
+    }
+}
+
+.slogan .welcome-message {
     font-size: 8vh;
     font-family: 'Inspiration', cursive;
 }
-.slogan .welcome-message strong{
+
+.slogan .welcome-message strong {
     color: #EF4430;
-    
+
 
 }
-.btn{
+@media (min-width: 320px) and (max-width: 480px) {
+    .slogan .welcome-message strong, .slogan .welcome-message{
+        justify-content: center;
+        font-size: 6vh;
+    }
+}
+
+.btn {
     background-color: #fff;
     padding: 10px;
     font-weight: bold;
@@ -87,43 +126,71 @@
     width: 35%;
     text-align: center;
     margin-left: 2%;
-    
-    
+
+
 }
-.btn:hover{
-    /* color: #fff; */
-    /* background: linear-gradient(45deg, red, black); */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .buttons {
+        margin-left: 10%;
+    }
+}
+
+.btn:hover {
     background-color: black;
     color: #EF4430;
 
 }
-.enjoy{
+
+.enjoy {
     color: rgb(255, 0, 0);
-    
+
 }
-#types, #types2{
+
+#pizza-types,
+#pizza-types2 {
     position: relative;
 
 }
-#types img{
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #pizza-types,
+    #pizza-types2 {
+        position: relative;
+    }
+}
+
+#types img {
     width: 90%;
     object-fit: cover;
     border-radius: 8px;
     height: 80%;
 }
-#types2 img{
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #pizza-types img,
+    #pizza-types2 img {
+        width: 100%;
+    }
+}
+
+#types2 img {
     width: 90%;
     object-fit: cover;
     border-radius: 8px;
     height: 70%;
 }
-#choose{
+
+#choose {
     font-size: 3vh;
     font-weight: bold;
     line-height: 1.8;
 }
+
 #types .col-md-3 .h5,
-#types2 .col-md-3 .h5{
+#types2 .col-md-3 .h5 {
     text-align: center;
     font-size: 3.0vh;
     font-weight: bold;
@@ -131,34 +198,39 @@
 }
 
 /* Footer */
-footer{
+footer {
     background-color: black;
 }
+
 #footer h2 {
     font-size: 5vh;
     text-align: center;
     color: white;
+    font-family: 'Inspiration', cursive;
 }
-#footer h2 em{
+
+#footer h2 em {
     color: #EF4430;
+    font-family: 'Inspiration', cursive;
 }
-footer .icons{
+
+footer .icons {
     color: #EF4430;
     text-align: center;
     padding: 20px;
-    
-
 }
-.icons .icon{
+
+.icons .icon {
     padding: 20px;
     font-size: 3.5vh;
 }
 
 /* user form */
-#form-data{
+#form-data {
     justify-content: center;
 }
-form{
+
+form {
     background-image: url('../IMAGES/pizza-bg.jpg');
     background-size: cover;
     object-fit: cover;
@@ -168,43 +240,60 @@ form{
     position: absolute;
     border-radius: 10px;
 }
-form h2{
+
+@media (min-width: 320px) and (max-width: 480px) {
+    form {
+        position: relative;
+        width: 100%;
+    }
+}
+
+form h2 {
     color: #fff;
     font-weight: bold;
     font-size: 5vh;
 }
-form input, select {
+
+form input,
+select {
     border-radius: 5px;
     border: 1px solid white;
     background: transparent;
     color: #fff;
     width: 50%;
 }
-form input[radio]{
+
+form input[radio] {
     color: #fff;
     position: absolute;
 }
-::placeholder{
+
+::placeholder {
     color: white;
     font-style: italic;
 }
-form input[text]{
+
+form input[text] {
     color: #fff;
 }
-form label{
+
+form label {
     color: rgb(240, 80, 48);
     font-weight: bold;
     font-size: 3.5vh;
 }
-form label:hover{
+
+form label:hover {
     color: #fff;
 }
-form  select option{
+
+form select option {
     color: #000;
 }
-#submit, 
+
+#submit,
 #close,
-#checkout{
+#checkout {
     background-color: #fff;
     padding: 5px;
     font-weight: bold;
@@ -217,22 +306,25 @@ form  select option{
     margin-bottom: 2%;
 
 }
-#submit:hover, 
+
+#submit:hover,
 #close:hover,
-#checkout:hover{
+#checkout:hover {
     background-color: rgb(232, 152, 44);
     color: #fff;
 }
 
 /* hover effect to show price */
 #hover1 #price1
+
 /*#hover2 #price2
 #hover3 #price3
 #hover4 #price4
 #hover5 #price5
 #hover6 #price6
 #hover7 #price7
-#hover8 #price8*/{ 
+#hover8 #price8*/
+    {
     border: 7px solid #fff;
     color: #fff;
     font-weight: 900;
@@ -240,24 +332,29 @@ form  select option{
     height: 70%;
     margin: -90% 0 0 10%;
     display: none;
-    
+
 }
-#delivery-paragraph{
-    background-color: #000; 
+
+#delivery-paragraph {
+    background-color: #000;
     color: #fff;
-    text-align: center; 
-    position: relative; 
-    display: none;  
+    text-align: center;
+    position: relative;
+    display: none;
 }
-#delivery-paragraph .delivery-paragraph{
+
+#delivery-paragraph .delivery-paragraph {
     font-size: 3vh;
     text-align: center;
 }
-#delivery-paragraph .delivery-paragraph em{
+
+#delivery-paragraph .delivery-paragraph em {
     color: #EF4430;
     font-weight: bold;
+
 }
-#delivery-paragraph .button{
+
+#delivery-paragraph .button {
     padding: 8px;
     width: 20%;
     color: #EF4430;
@@ -268,11 +365,17 @@ form  select option{
     font-weight: bold;
 
 }
-.table{
+
+.table {
     color: #fff;
 }
-.summary{
+
+.summary {
     display: none;
 }
 
-
+@media (min-width: 320px) and (max-width: 480px) {
+    iframe {
+        display: none;
+    }
+}

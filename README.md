@@ -15,21 +15,21 @@ Pizza Bellino is a web application for the company that has decide to widen the 
 
 <hr>
 
-#### **Introduction**
+#### **Welcome to Pizza Bellino**
 
-![Introduction to Akan naming](./Images/Intro.png)
-
-<hr>
-
-#### **User Form**
-
-![Form filled by the user](./Images/form.png)
+![Welcome](./Images/Intro.png)
 
 <hr>
 
-#### **Some AKAN Names with their gender**
+#### **Pizza ordering form**
 
-![Male and female Names](./Images/Akan-names.png)
+![Pizza ordering form](./Images/form.png)
+
+<hr>
+
+#### ****
+
+![Pizza types](./Images/Akan-names.png)
 
 <hr>
 
