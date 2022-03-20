@@ -1,6 +1,6 @@
+$(document).ready(function () {
+    
 function validate() {
-    let fullName = $('#name').val();
-    let telephoneNumber = $('#tel').val();
     if (fullName.value == "" || fullName.value.length == 0) {
         alert("Dear Customer Enter A valid Name")
         return false
@@ -11,8 +11,9 @@ function validate() {
         alert(fullName.value + " " + "We have received your Pizza order.We are Preparing.Thank You")
     }
 }
+
 // Showing and hiding form on click of the order link
-$(document).ready(function () {
+
 
     // closing and making orders
     $('#orderNow').click(function () {
@@ -43,10 +44,46 @@ $(document).ready(function () {
     })
 
     // Checking out and confirming the prices
-    $('#checkout').click(function () {
+    $('#checkout').click(function (event) {
+        event.preventDefault();
+    });
+    $('#checkout').click(function (event) {
+        let fullName = $('#personName').val();
+        let telephoneNumber = $('#tel').val();
+        let pizzaType = $('#pizza-type option:selected').val();
+        let pizzaSize = $('#pizza-size option:selected').val();
+        let crustType = $('#crust option:selected').val();
+        let toppings = $('#toppings option:selected').val();
+        let additionalToppings = $('#toppings2 option:selected').val();
+        let totalNumberOfPizza = $('#pizzaNumber').val();
+        let costOfDelivery = $('#delivery option:selected').val();
+        let destination = $('#destination').val();
+        let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
+            parseInt(additionalToppings) + parseInt(crustType) + parseInt(costOfDelivery));
+
         $('#summary').toggle();
-    })
-    
+        $("#orderSummary").show();
+        $("#orderSummary").append(
+            "<tr>" +
+            '<td>' +
+            totalNumberOfPizza +
+            "</td>" +
+            "<td>" +
+            fullName +
+            "</td>" +
+            "<td>" +
+            telephoneNumber +
+            "</td>" +
+            "<td>" +
+            costOfDelivery +
+            "</td>" +
+            "<td>" +
+            totalsOfPizza +
+            "</td>" +
+            "</tr>"
+        );
+    });
+
 
 
 
@@ -66,7 +103,7 @@ $(document).ready(function () {
 
     $('#submit').click(function (event) {
         event.preventDefault()
-        let fullName = $('#name').val();
+        let fullName = $('#personName').val();
         let telephoneNumber = $('#tel').val();
         let pizzaType = $('#pizza-type option:selected').val();
         let pizzaSize = $('#pizza-size option:selected').val();
@@ -76,10 +113,11 @@ $(document).ready(function () {
         let totalNumberOfPizza = $('#pizzaNumber').val();
         let costOfDelivery = $('#delivery option:selected').val();
         let destination = $('#destination').val();
-
         let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
             parseInt(additionalToppings) + parseInt(crustType) + parseInt(costOfDelivery));
-        alert("Dear " + fullName + "Your" + pizzaType + telephoneNumber + totalsOfPizza);
+        alert("Hey" + " " + fullName + " " + "of telephone " + telephoneNumber + " " + "and your " + pizzaType + " " + crustType + " " +
+            toppings + " " + additionalToppings + " " + totalNumberOfPizza + costOfDelivery + " " +
+            destination + " " + "And of your Totals is :" + totalsOfPizza)
     });
 
 })
