@@ -239,3 +239,30 @@ form  select option{
     display: none;
     
 }
+#delivery-paragraph{
+    background-color: #000;
+    color: #fff;
+    text-align: center; 
+    position: relative;   
+}
+#delivery-paragraph .delivery-paragraph{
+    font-size: 3vh;
+    text-align: center;
+}
+#delivery-paragraph .delivery-paragraph em{
+    color: #EF4430;
+    font-weight: bold;
+}
+#delivery-paragraph .button{
+    padding: 8px;
+    width: 20%;
+    color: #EF4430;
+    background-color: white;
+    border: none;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+
+

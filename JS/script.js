@@ -48,6 +48,7 @@ $(document).ready(function () {
         event.preventDefault()
         let fullName = $('#name').val();
         let telephoneNumber = $('#tel').val();
+        let pizzaType = $('#pizza-type option:selected').val();
         let pizzaSize = $('#pizza-size option:selected').val();
         let crustType = $('#crust option:selected').val();
         let toppings = $('#toppings option:selected').val();
@@ -58,6 +59,6 @@ $(document).ready(function () {
 
         let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings)
         + parseInt(additionalToppings)+ parseInt(crustType) + parseInt(costOfDelivery));
-        alert("Dear " + fullName + telephoneNumber + totalsOfPizza);
+        alert("Dear " + fullName +"Your" +pizzaType + telephoneNumber + totalsOfPizza);
     });
 })
