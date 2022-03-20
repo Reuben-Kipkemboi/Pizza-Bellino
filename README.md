@@ -15,21 +15,21 @@ Pizza Bellino is a web application for the company that has decide to widen the 
 
 <hr>
 
-#### **Welcome to Pizza Bellino**
+### **Welcome to Pizza Bellino**
 
-![Welcome](./Images/Intro.png)
-
-<hr>
-
-#### **Pizza ordering form**
-
-![Pizza ordering form](./Images/form.png)
+![Welcome](./IMAGES/Welcome.png)
 
 <hr>
 
-#### ****
+### **Pizza ordering form**
 
-![Pizza types](./Images/Akan-names.png)
+![Pizza ordering form](./IMAGES/form.png)
+
+<hr>
+
+### **The various Pizza Types**
+
+![Pizza types](./IMAGES/types.png)
 
 <hr>
 
@@ -83,7 +83,7 @@ Behaviour Driven Development goal is to allow maximum information is delivered t
 * Email - [Reuben Kipkemboi](https://gmail.com)
 
 # live site
-* 
+* #### https://reuben-kipkemboi.github.io/Pizza-Bellino/
 
 
 
