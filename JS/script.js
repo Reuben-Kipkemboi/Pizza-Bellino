@@ -83,11 +83,6 @@ function validate() {
             "</tr>"
         );
     });
-
-
-
-
-
     //  price on move of the mouse
 
     $('#hover1').mouseover(function () {
@@ -96,11 +91,7 @@ function validate() {
     $('#hover1').mouseout(function () {
         $('#price1').hide()
     })
-
-
     //Backend logic
-
-
     $('#submit').click(function (event) {
         event.preventDefault()
         let fullName = $('#personName').val();
@@ -120,4 +111,4 @@ function validate() {
             destination + " " + "And of your Totals is :" + totalsOfPizza)
     });
 
-})
+});
