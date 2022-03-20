@@ -1,18 +1,18 @@
 $(document).ready(function () {
-    
-function validate() {
-    if (fullName.value == "" || fullName.value.length == 0) {
-        alert("Dear Customer Enter A valid Name")
-        return false
-    } else if (telephoneNumber.value.length < 10) {
-        alert("Kindly Recheck Your Phone Number")
-        return false
-    } else {
-        alert(fullName.value + " " + "We have received your Pizza order.We are Preparing.Thank You")
-    }
-}
 
-// Showing and hiding form on click of the order link
+    function validate() {
+        if (fullName.value == "" || fullName.value.length == 0) {
+            alert("Dear Customer Enter A valid Name")
+            return false
+        } else if (telephoneNumber.value.length < 10) {
+            alert("Kindly Recheck Your Phone Number")
+            return false
+        } else {
+            alert(fullName.value + " " + "We have received your Pizza order.We are Preparing.Thank You")
+        }
+    }
+
+    // Showing and hiding form on click of the order link
 
 
     // closing and making orders
@@ -75,6 +75,12 @@ function validate() {
             telephoneNumber +
             "</td>" +
             "<td>" +
+            toppings +
+            "</td>" +
+            "<td>" +
+            crustType +
+            "</td>" +
+            "<td>" +
             costOfDelivery +
             "</td>" +
             "<td>" +
@@ -107,15 +113,15 @@ function validate() {
         let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
             parseInt(additionalToppings) + parseInt(crustType) + parseInt(costOfDelivery));
 
-        if(costOfDelivery == 0){
-            alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ",thank you for ordering, We have received Your Order of and your "
-        + totalNumberOfPizza+ " " + pizzaType + " " + "Is being prepared. Kindly pick it up at our new outlet." +" " + "Your Total Amount to be paid is :" + totalsOfPizza)
-        }else{
-            alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ".We have received Your Order of "
-        + totalNumberOfPizza+ " " + pizzaType + " " + "It is being prepared and our messenger will deliver to " +
-            destination + " " + "Be on the watch for a call." + "Your Total Amount  to be paid is :" + totalsOfPizza  + ".Pay on delivery" )
+        if (costOfDelivery == 0) {
+            alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ",thank you for ordering, We have received Your Order of " +
+                totalNumberOfPizza + " " + pizzaType + " " + "Is being prepared. Kindly pick it up at our new outlet." + " " + "Your Total Amount to be paid is :" + totalsOfPizza)
+        } else {
+            alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ".We have received Your Order of " +
+                totalNumberOfPizza + " " + pizzaType + " " + "It is being prepared and our messenger will deliver to " +
+                destination + " " + "Be on the watch for a call." + "Your Total Amount  to be paid is :" + totalsOfPizza + ".Pay on delivery")
         }
-        
+
     });
 
 });
