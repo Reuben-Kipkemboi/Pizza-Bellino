@@ -336,16 +336,23 @@ form select option {
 }
 
 #delivery-paragraph {
-    background-color: #000;
+    background-image: url('../IMAGES/veg.webp');
     color: #fff;
     text-align: center;
     position: relative;
     display: none;
+    height: 70vh;
+    font-size: 4vh;
 }
 
 #delivery-paragraph .delivery-paragraph {
     font-size: 3vh;
     text-align: center;
+}
+#delivery-paragraph .fa-solid{
+    font-size: 15vh;
+    margin:3%;
+    color: rgb(232, 152, 44);
 }
 
 #delivery-paragraph .delivery-paragraph em {

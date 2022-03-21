@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-
     // Showing and hiding form on click of the order link
-
 
     // closing and making orders
     $('#orderNow').click(function () {
@@ -24,13 +22,30 @@ $(document).ready(function () {
 
     $('#deliveryOverview').click(function () {
         $('#delivery-paragraph').toggle();
-        $('#delivery-paragraph').css("width", "70%");
+        $('#delivery-paragraph').css("width", "100%");
 
     })
+
+    $('#deliveryOverview').click(function () {
+        $('#description').toggle();
+        $('#pizza-types').toggle();
+        $('#pizza-types2').toggle();
+    });
+
 
     $('.button').click(function () {
         $('#delivery-paragraph').hide();
+
+        $('form#orderForm').hide();
+        $('#description').show();
+        $('#pizza-types').show();
+        $('#pizza-types2').show();
     })
+
+    // Delivery services output page on click
+    
+
+
 
     // Checking out and confirming the prices
     $('#checkout').click(function (event) {
@@ -101,7 +116,7 @@ $(document).ready(function () {
         let destination = $('#destination').val();
         let totalsOfPizza = parseInt(totalNumberOfPizza) * (parseInt(pizzaSize) + parseInt(toppings) +
             parseInt(additionalToppings) + parseInt(crustType) + parseInt(costOfDelivery));
-        
+
         event.preventDefault()
         if (fullName == "" || fullName.length == 0) {
             alert("Dear Customer Enter A valid Name")
@@ -109,9 +124,9 @@ $(document).ready(function () {
         } else if (telephoneNumber.length < 10) {
             alert("Kindly Recheck Your Phone Number")
             return false
-        } 
+        }
 
-        
+
 
         if (costOfDelivery == 0) {
             alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ",thank you for ordering, We have received Your Order of " +
@@ -124,6 +139,6 @@ $(document).ready(function () {
 
 
     });
-    
+
 
 });
