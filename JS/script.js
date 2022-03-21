@@ -43,7 +43,7 @@ $(document).ready(function () {
     })
 
     // Delivery services output page on click
-    
+
 
 
 
@@ -125,9 +125,6 @@ $(document).ready(function () {
             alert("Kindly Recheck Your Phone Number")
             return false
         }
-
-
-
         if (costOfDelivery == 0) {
             alert("Dear " + " " + fullName + " " + "of telephone Number " + telephoneNumber + " " + ",thank you for ordering, We have received Your Order of " +
                 totalNumberOfPizza + " " + pizzaType + " " + "and is being prepared. Kindly pick it up at our new outlet." + " " + "Your Total Amount to be paid is :" + totalsOfPizza)
@@ -136,7 +133,6 @@ $(document).ready(function () {
                 totalNumberOfPizza + " " + pizzaType + " " + "It is being prepared and our messenger will deliver to " +
                 destination + " " + "Be on the watch for a call." + "Your Total Amount  to be paid is :" + totalsOfPizza + ".Pay on delivery")
         }
-
 
     });
 

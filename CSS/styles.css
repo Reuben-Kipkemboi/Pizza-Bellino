@@ -6,6 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#introduction {
+    overflow-x: hidden;
+    margin-left: 15px;
+}
+
 /* Header */
 .h1 {
     color: red;
@@ -94,8 +99,9 @@
     padding: 50px;
     font-size: 15vh;
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
-    .slogan.more h2{
+    .slogan.more h2 {
         justify-content: center;
         font-size: 6vh;
     }
@@ -111,8 +117,11 @@
 
 
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
-    .slogan .welcome-message strong, .slogan .welcome-message{
+
+    .slogan .welcome-message strong,
+    .slogan .welcome-message {
         justify-content: center;
         font-size: 6vh;
     }
@@ -315,16 +324,7 @@ form select option {
 }
 
 /* hover effect to show price */
-#hover1 #price1
-
-/*#hover2 #price2
-#hover3 #price3
-#hover4 #price4
-#hover5 #price5
-#hover6 #price6
-#hover7 #price7
-#hover8 #price8*/
-    {
+#hover1 #price1 {
     border: 7px solid #fff;
     color: #fff;
     font-weight: 900;
@@ -349,9 +349,10 @@ form select option {
     font-size: 3vh;
     text-align: center;
 }
-#delivery-paragraph .fa-solid{
+
+#delivery-paragraph .fa-solid {
     font-size: 15vh;
-    margin:3%;
+    margin: 3%;
     color: rgb(232, 152, 44);
 }
 
