@@ -40,6 +40,15 @@
 .nav .nav-item {
     padding: 20px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav .nav-item {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
 
 .nav .nav-item .link {
     font-size: 3.5vh;
@@ -123,7 +132,7 @@
     .slogan .welcome-message strong,
     .slogan .welcome-message {
         justify-content: center;
-        font-size: 6vh;
+        font-size: 11vh;
     }
 }
 
@@ -135,8 +144,15 @@
     width: 35%;
     text-align: center;
     margin-left: 2%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .btn {
+        width: 40%;
+        padding: 3px;
+        border: 1px solid black;
 
 
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -164,9 +180,11 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    #pizza-types,
-    #pizza-types2 {
+    #types,
+    #types2 {
+        display: flex !important;
         position: relative;
+        flex-direction: column !important;
     }
 }
 
@@ -179,9 +197,9 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    #pizza-types img,
-    #pizza-types2 img {
-        width: 100%;
+    #types img{
+        width: 100% !important;
+        margin: 0 auto;
     }
 }
 
@@ -190,6 +208,14 @@
     object-fit: cover;
     border-radius: 8px;
     height: 70%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #types2 img{
+        width: 100% !important;
+        margin: 0 auto;
+        height: 80%;
+    }
 }
 
 #choose {
@@ -228,10 +254,27 @@ footer .icons {
     text-align: center;
     padding: 20px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+    footer .icons{
+        text-align: center;
+        font-size: 3vh;
+        line-height: 1.6;
+
+    }
+}
 
 .icons .icon {
     padding: 20px;
     font-size: 3.5vh;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .icons .icon{
+        text-align: center;
+        font-size: 2.5vh;
+        line-height: 1.6;
+        padding: 0;
+
+    }
 }
 
 /* user form */
